@@ -8,7 +8,6 @@
 	--index: calc(1vw + 1vh);
 	--text: #e7e7e0;
 	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
-	--depth: 1000px;
 }
 
 @font-face {
@@ -56,8 +55,8 @@ body {
 }
 
 .layer {
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	position: absolute;
 	background-size: cover;
 	background-position: center;
@@ -93,20 +92,15 @@ body {
 	will-change: transform;
 }
 
-.secrets_paragraphs {
-
-}
-
 .secrets { 
 	/*--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);*/
 	/*min-height: 130vh;*/
-	height: 130vh;
-	scroll-snap-align: start; /* НОВОЕ */
+	height: 100vh;
+	width: 100vw;
 	background-size: cover;
 	background-position: center;
 	display: flex;
 	top: -1px;
-	width: 100%;
 	position: relative;
 	overflow: hidden;
 	/*transition: var(--transition);
